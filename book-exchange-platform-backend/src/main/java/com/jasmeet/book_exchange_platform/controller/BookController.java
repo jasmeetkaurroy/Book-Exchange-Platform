@@ -84,7 +84,7 @@ public class BookController {
     ) {
         return bookService.updateBook(id, request);
     }
-    
+
     @GetMapping("/{id}")
     public BookResponse getBookById(@PathVariable Long id) {
         return bookService.getBookById(id);
